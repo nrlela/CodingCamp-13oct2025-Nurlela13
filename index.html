@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List - Nurlela</title>
+
+    <!-- CSS External File -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+    <!-- header section -->
+    <header>
+        <h1>My Todo List</h1>
+    </header>
+    <!-- main content section -->
+    <main>
+  <section class="todo-app">
+    <div class="input-group">
+      <input type="text" id="todo-input" placeholder="Add a todo..." />
+      <input type="date" id="todo-date" />
+      <button id="add-btn" onclick="addTask()">add</button>
+    </div>
+
+    <div class="action-buttons">
+      <button id="filter-btn">Filter</button>
+      <button id="delete-all-btn">Delete All</button>
+    </div>
+
+    <table id="task-table">
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>Due Date</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="task-list">
+        <tr><td colspan="4" style="text-align:center;">No task found</td></tr>
+      </tbody>
+    </table>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Nurlela Todo List</p>
+</footer>
+ <!-- Javascript External File -->
+    <script src="js/script.js"></script>
+</body>
+</html>
